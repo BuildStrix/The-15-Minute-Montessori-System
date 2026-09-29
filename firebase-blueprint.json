@@ -1,0 +1,70 @@
+{
+  "entities": {
+    "lead": {
+      "title": "Lead",
+      "description": "Captured email leads requesting the free 5-day Montessori starter plan.",
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "The subscriber's email address"
+        },
+        "source": {
+          "type": "string",
+          "description": "Origin of the lead request"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO timestamp when the email was submitted"
+        }
+      },
+      "required": ["email", "createdAt"]
+    },
+    "contactMessage": {
+      "title": "ContactMessage",
+      "description": "Contact form submissions from parents inquiring about the playbook.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The sender's name"
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "The sender's email address"
+        },
+        "childAge": {
+          "type": "string",
+          "description": "Child age specified by parent"
+        },
+        "subject": {
+          "type": "string",
+          "description": "Inquiry topic or subject"
+        },
+        "message": {
+          "type": "string",
+          "description": "The inquiry message body"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO timestamp when the message was sent"
+        }
+      },
+      "required": ["name", "email", "message", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/leads/{leadId}": {
+      "schema": "lead",
+      "description": "Collection of subscriber lead email captures"
+    },
+    "/contact_messages/{messageId}": {
+      "schema": "contactMessage",
+      "description": "Collection of contact inquiries submitted by parents"
+    }
+  }
+}

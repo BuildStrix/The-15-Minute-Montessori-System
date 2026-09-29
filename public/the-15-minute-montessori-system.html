@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The 15-Minute Montessori System</title>
+  <meta name="description" content="A 6-week, 30-activity parent playbook for children ages 18 months to 4 years. Calm, purposeful, screen-free learning in 15 minutes a day.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --wood-deep: #4A3624;
+      --wood: #8B6A4A;
+      --sage: #7C9473;
+      --sage-dark: #455C3C;
+      --sage-bg: #E9EEE3;
+      --terracotta: #C1785A;
+      --terracotta-dark: #8A4A2E;
+      --terracotta-bg: #F6E7DE;
+      --blue: #7C93A8;
+      --blue-dark: #3E5468;
+      --cream: #F3EDE1;
+      --cream-light: #FBF8F1;
+      --ink: #3A2E22;
+      --ink-light: #6B5D4C;
+      --border: #D9CBB4;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Karla', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--cream);
+      color: var(--ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, h4, .serif {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-weight: 500;
+    }
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; cursor: pointer; border: none; }
+    .max-w { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+    .btn-terracotta {
+      background: var(--terracotta);
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: background 0.2s;
+    }
+    .btn-terracotta:hover { background: var(--terracotta-dark); }
+    .pill {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 500;
+      border: 1px solid var(--border);
+    }
+    .card {
+      background: var(--cream-light);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+    }
+    /* Sticky Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(243, 237, 225, 0.95);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      height: 64px;
+      display: flex;
+      align-items: center;
+    }
+    .header-inner { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+    .logo-lockup { display: flex; align-items: center; gap: 10px; }
+    .nav-links { display: flex; gap: 24px; font-size: 14px; font-weight: 500; color: var(--ink-light); }
+    .nav-links a:hover { color: var(--wood-deep); }
+    /* Hero */
+    .hero { padding: 48px 0 64px; text-align: center; border-bottom: 1px solid var(--border); }
+    .hero h1 { font-size: 42px; line-height: 1.2; color: var(--wood-deep); margin: 20px 0; max-width: 900px; margin-left: auto; margin-right: auto; }
+    .hero p { font-size: 18px; color: var(--ink-light); max-width: 720px; margin: 0 auto 28px; }
+    /* Pillars Grid */
+    .pillars-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 32px; }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 30px; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Sticky Header -->
+  <header>
+    <div class="max-w header-inner">
+      <div class="logo-lockup">
+        <div style="width: 38px; height: 38px; border-radius: 10px; background: #422e1e; display: flex; align-items: center; justify-content: center; position: relative; border: 1px solid rgba(139, 106, 74, 0.5);">
+          <div style="position: absolute; inset: 4px; border-radius: 50%; border: 1px solid rgba(124, 148, 115, 0.9);"></div>
+          <svg width="24" height="20" viewBox="0 0 100 80" fill="none">
+            <circle cx="38" cy="27" r="5" stroke="#F3EDE1" stroke-width="3" fill="none"/>
+            <circle cx="51" cy="23" r="5.5" stroke="#F3EDE1" stroke-width="3" fill="none"/>
+            <rect x="61" y="18" width="4" height="15" rx="2" fill="#F3EDE1"/>
+            <rect x="18" y="32" width="64" height="15" rx="7" stroke="#F3EDE1" stroke-width="3.5" fill="none"/>
+            <path d="M26 47V56C26 60.4183 29.5817 64 34 64H66C70.4183 64 74 60.4183 74 56V47" stroke="#F3EDE1" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+        <strong class="serif" style="font-size: 18px; color: var(--wood-deep);">The 15-Minute Montessori System</strong>
+      </div>
+      <nav class="nav-links">
+        <a href="#pillars">The 4 Pillars</a>
+        <a href="#inside">Inside the Book</a>
+        <a href="#roadmap">6-Week Roadmap</a>
+        <a href="#preview">Free 5-Day Plan</a>
+        <a href="#included">What's Included</a>
+      </nav>
+      <a href="#included" class="btn-terracotta" style="padding: 8px 16px; font-size: 13px;">Get the Playbook — $47</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="max-w">
+      <div style="display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;">
+        <span class="pill" style="background: var(--sage-bg); color: var(--sage-dark);">30 Step-by-Step Activities</span>
+        <span class="pill" style="background: var(--terracotta-bg); color: var(--terracotta-dark);">6 Purposeful Weeks</span>
+        <span class="pill" style="background: var(--cream-light); color: var(--wood-deep);">15 Minutes a Day</span>
+        <span class="pill" style="background: var(--cream-light); color: var(--wood);">Ages 18 Months – 4 Years</span>
+      </div>
+      <h1>Know exactly what to do each day, in 15 minutes or less, with no expensive materials and no screens.</h1>
+      <p>A calm, 6-week daily parent playbook for children ages 18 months to 4 years. Thirty authentic Montessori activities structured into 15-minute daily rhythms—using only simple household items already in your kitchen and pantry.</p>
+      <div>
+        <a href="#included" class="btn-terracotta" style="font-size: 16px; padding: 14px 28px;">Get the Playbook — $47 →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Grounding Problem Section -->
+  <section style="padding: 64px 0; background: var(--cream-light); border-bottom: 1px solid var(--border);">
+    <div class="max-w">
+      <div style="text-align: center; max-width: 680px; margin: 0 auto 36px;">
+        <span style="font-size: 12px; font-weight: 600; text-transform: uppercase; color: var(--wood); letter-spacing: 1px;">The Real Pain This Solves</span>
+        <h2 class="serif" style="font-size: 28px; color: var(--wood-deep); margin-top: 8px;">You don't need a thousand-dollar playroom to give your child an authentic Montessori foundation.</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+        <div class="card" style="background: var(--cream);">
+          <strong style="color: var(--terracotta-dark); font-size: 12px; text-transform: uppercase;">01. 4:30 PM Decision Fatigue</strong>
+          <h3 class="serif" style="font-size: 18px; margin: 8px 0; color: var(--wood-deep);">Staring at a toy bin with zero bandwidth left.</h3>
+          <p style="font-size: 14px; color: var(--ink-light);">You shouldn't have to plan for 20 minutes to get 10 minutes of calm connection. The daily rhythm is pre-set so you open the book and begin.</p>
+        </div>
+        <div class="card" style="background: var(--cream);">
+          <strong style="color: var(--terracotta-dark); font-size: 12px; text-transform: uppercase;">02. The Pinterest Trap</strong>
+          <h3 class="serif" style="font-size: 18px; margin: 8px 0; color: var(--wood-deep);">45 minutes of preparation for 90 seconds of play.</h3>
+          <p style="font-size: 14px; color: var(--ink-light);">No dyed pasta or acrylic trays. Authentic Montessori was founded on real everyday objects: cups, cloths, and dry grains.</p>
+        </div>
+        <div class="card" style="background: var(--cream);">
+          <strong style="color: var(--terracotta-dark); font-size: 12px; text-transform: uppercase;">03. Screen-Free Ambiguity</strong>
+          <h3 class="serif" style="font-size: 18px; margin: 8px 0; color: var(--wood-deep);">Knowing if independent play is actually building focus.</h3>
+          <p style="font-size: 14px; color: var(--ink-light);">Every activity targets verified developmental milestones: bilateral grip, tactile discrimination, phonemic awareness, and balance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The 4 Pillars -->
+  <section id="pillars" style="padding: 64px 0; border-bottom: 1px solid var(--border);">
+    <div class="max-w">
+      <div style="text-align: center; max-width: 680px; margin: 0 auto 36px;">
+        <span style="font-size: 12px; font-weight: 600; text-transform: uppercase; color: var(--wood); letter-spacing: 1px;">The 4 Core Pillars</span>
+        <h2 class="serif" style="font-size: 32px; color: var(--wood-deep); margin-top: 8px;">Structured by Pillar, One Day at a Time</h2>
+      </div>
+      <div class="pillars-grid">
+        <div class="card" style="border-top: 4px solid var(--terracotta);">
+          <span class="pill" style="background: var(--terracotta-bg); color: var(--terracotta-dark); margin-bottom: 12px;">Monday Pillar</span>
+          <h3 class="serif" style="font-size: 20px; color: var(--wood-deep); margin-bottom: 8px;">Practical Life</h3>
+          <p style="font-size: 14px; color: var(--ink-light);">Everyday real-world tasks that build fine-motor mastery, bilateral coordination, and genuine independence.</p>
+        </div>
+        <div class="card" style="border-top: 4px solid var(--blue);">
+          <span class="pill" style="background: #EAEFF4; color: var(--blue-dark); margin-bottom: 12px;">Tuesday Pillar</span>
+          <h3 class="serif" style="font-size: 20px; color: var(--wood-deep); margin-bottom: 8px;">Sensorial</h3>
+          <p style="font-size: 14px; color: var(--ink-light);">Isolating tactile, visual, and auditory contrasts to refine sensory discrimination and cognitive classification.</p>
+        </div>
+        <div class="card" style="border-top: 4px solid var(--sage);">
+          <span class="pill" style="background: var(--sage-bg); color: var(--sage-dark); margin-bottom: 12px;">Wednesday Pillar</span>
+          <h3 class="serif" style="font-size: 20px; color: var(--wood-deep); margin-bottom: 8px;">Language</h3>
+          <p style="font-size: 14px; color: var(--ink-light);">Enriching precise real-world vocabulary, phonemic awareness, and the three-period lesson without flashcards.</p>
+        </div>
+        <div class="card" style="border-top: 4px solid var(--wood);">
+          <span class="pill" style="background: #F5EFE6; color: var(--wood-deep); margin-bottom: 12px;">Thursday Pillar</span>
+          <h3 class="serif" style="font-size: 20px; color: var(--wood-deep); margin-bottom: 8px;">Movement</h3>
+          <p style="font-size: 14px; color: var(--ink-light);">Gross-motor coordination, balance, bodily grace, and purposeful physical restraint in the home space.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Purchase Section -->
+  <section id="included" style="padding: 72px 0; background: var(--cream-light); border-bottom: 1px solid var(--border);">
+    <div class="max-w" style="max-width: 800px; text-align: center;">
+      <span class="pill" style="background: var(--sage-bg); color: var(--sage-dark);">Complete Digital System</span>
+      <h2 class="serif" style="font-size: 38px; color: var(--wood-deep); margin: 16px 0 8px;">Get The 15-Minute Montessori System</h2>
+      <p style="font-size: 16px; color: var(--ink-light); margin-bottom: 32px;">A 6-week parent playbook, 30 scripted daily activities, weekly roadmaps, and the free 5-day bonus plan.</p>
+      
+      <div style="background: var(--wood-deep); color: var(--cream); border-radius: 20px; padding: 36px; border: 2px solid var(--wood); text-align: left;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 20px;">
+          <span class="serif" style="font-size: 48px; color: #fff;">$47</span>
+          <span style="font-size: 13px; color: var(--border);">USD · One-Time Payment · Lifetime Access</span>
+        </div>
+        <ul style="list-style: none; font-size: 14px; line-height: 2; margin-bottom: 24px; color: #fff;">
+          <li>✓ 140-Page Parent Playbook (High-resolution PDF)</li>
+          <li>✓ 30 Daily Activities with Verbatim Scripts & Observation Guides</li>
+          <li>✓ 6 Weekly Planning Roadmaps & Rhythm Visualizers</li>
+          <li>✓ Household Materials Master Checklist (No specialty toys)</li>
+          <li>✓ Verbatim Parent Scripts Pocket Guide & Transitions Cheat Sheet</li>
+          <li>✓ FREE BONUS: 5-Day No-Prep Play Plan ($19 Value Included)</li>
+          <li>✓ 30-Day 100% Calm & Confident Money-Back Guarantee</li>
+        </ul>
+        <div style="background: rgba(233, 238, 227, 0.15); border: 1px solid var(--wood); border-radius: 12px; padding: 16px; margin-bottom: 20px; font-size: 13px;">
+          <strong style="color: #fff; display: flex; align-items: center; gap: 6px; margin-bottom: 4px;">
+            <span>🛡️</span> Verified Secure Checkout via Whop
+          </strong>
+          <span style="color: var(--border);">You will be securely redirected to our verified product checkout on <strong>whop.com</strong> with 256-bit SSL encryption, Apple Pay, Google Pay, and instant file delivery.</span>
+        </div>
+        <a href="https://whop.com/checkout/plan_76QunGgwZkbpD" target="_blank" rel="noopener noreferrer" class="btn-terracotta" style="width: 100%; justify-content: center; font-size: 18px; padding: 16px;">
+          Continue to Secure Whop Checkout — $47 →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background: var(--wood-deep); color: var(--border); padding: 32px 0; text-align: center; font-size: 12px;">
+    <div class="max-w">
+      <p style="color: #fff; font-size: 14px; margin-bottom: 6px;">The 15-Minute Montessori System</p>
+      <p>© The 15-Minute Montessori System. Calm, purposeful, screen-free learning in 15 minutes a day.</p>
+    </div>
+  </footer>
+</body>
+</html>

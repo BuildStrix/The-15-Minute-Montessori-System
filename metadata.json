@@ -1,0 +1,8 @@
+{
+  "name": "The 15-Minute Montessori System",
+  "description": "A 6-week, 30-activity parent playbook for children ages 18 months to 4 years. Calm, purposeful, screen-free learning in 15 minutes a day.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

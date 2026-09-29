@@ -1,0 +1,47 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isValidEmail(email) {
+      return email is string && email.size() >= 3 && email.size() <= 200 && email.matches('^.+@.+\\..+$');
+    }
+
+    function isValidLead(data) {
+      return data.keys().hasAll(['email', 'createdAt'])
+        && data.keys().hasOnly(['email', 'source', 'createdAt'])
+        && isValidEmail(data.email)
+        && data.createdAt is string
+        && (!('source' in data) || (data.source is string && data.source.size() <= 100));
+    }
+
+    function isValidContactMessage(data) {
+      return data.keys().hasAll(['name', 'email', 'message', 'createdAt'])
+        && data.keys().hasOnly(['name', 'email', 'childAge', 'subject', 'message', 'createdAt'])
+        && data.name is string && data.name.size() > 0 && data.name.size() <= 120
+        && isValidEmail(data.email)
+        && data.message is string && data.message.size() > 0 && data.message.size() <= 5000
+        && data.createdAt is string
+        && (!('childAge' in data) || (data.childAge is string && data.childAge.size() <= 50))
+        && (!('subject' in data) || (data.subject is string && data.subject.size() <= 150));
+    }
+
+    // Leads collection: Public can submit their email, writes are validated
+    match /leads/{leadId} {
+      allow create: if isValidLead(request.resource.data);
+      allow read: if false; // Only accessible via Firebase Console or Admin SDK
+      allow update, delete: if false;
+    }
+
+    // Contact messages collection: Public can submit inquiries
+    match /contact_messages/{messageId} {
+      allow create: if isValidContactMessage(request.resource.data);
+      allow read: if false; // Only accessible via Firebase Console or Admin SDK
+      allow update, delete: if false;
+    }
+
+    // Connection test document
+    match /test/connection {
+      allow read: if true;
+    }
+  }
+}
